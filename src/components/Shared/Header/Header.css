@@ -1,0 +1,11 @@
+.navlink-custom {
+ text-decoration: none;
+ padding: 0.2em 0.5em;
+ margin: 0 0.5em;
+ color: #666666;
+ transition: all 300ms;
+ font-weight: 500;
+}
+.navlink-custom:hover {
+ color: #499371;
+}

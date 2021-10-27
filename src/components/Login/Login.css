@@ -1,0 +1,17 @@
+.login-section {
+ min-height: 60vh;
+}
+.login-card {
+ padding: 8em;
+ border-radius: 1rem;
+ box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.151);
+}
+.login-auth-btn {
+ border: none;
+ border-radius: 2em;
+ padding: 0.5em 4em;
+ display: flex;
+}
+.login-auth-btn img {
+ margin: 0 0.5em;
+}
