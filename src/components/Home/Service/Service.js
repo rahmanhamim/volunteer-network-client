@@ -6,12 +6,12 @@ import "./Service.css";
 
 const Service = ({ service, index, services }) => {
  const { user } = useAuth();
-
+ // https://stark-eyrie-33838.herokuapp.com/
  const handleJoinBtn = (index) => {
   const joinedTeam = services[index];
   joinedTeam.email = user.email;
   console.log(joinedTeam);
-  fetch(`http://localhost:5000/userdata/${user.email}`, {
+  fetch(`https://stark-eyrie-33838.herokuapp.com/userdata/${user.email}`, {
    method: "POST",
    headers: {
     "content-type": "application/json",

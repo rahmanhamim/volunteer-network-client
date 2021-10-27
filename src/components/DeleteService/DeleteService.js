@@ -4,7 +4,7 @@ const DeleteService = () => {
  const [services, setServices] = useState([]);
 
  useEffect(() => {
-  fetch("http://localhost:5000/services")
+  fetch("https://stark-eyrie-33838.herokuapp.com/services")
    .then((res) => res.json())
    .then((data) => setServices(data));
  }, []);
@@ -13,7 +13,7 @@ const DeleteService = () => {
   const confirmDelete = window.confirm("are you sure?");
 
   if (confirmDelete) {
-   fetch(`http://localhost:5000/services/${id}`, {
+   fetch(`https://stark-eyrie-33838.herokuapp.com/services/${id}`, {
     method: "DELETE",
    })
     .then((res) => res.json())
